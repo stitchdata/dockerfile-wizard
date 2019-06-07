@@ -6,7 +6,7 @@ image_config: &image_config
 
   IMAGE_NAME: circleci
 
-  IMAGE_TAG: notification-service
+  IMAGE_TAG: 16.04
 
   # NOTE: if you're modifying this config.yml file manually
   # rather than using the included setup script,
@@ -23,7 +23,7 @@ image_config: &image_config
 
   JAVA: true
 
-  MYSQL_CLIENT: true
+  MYSQL_CLIENT: false
 
   POSTGRES_CLIENT: false
 
