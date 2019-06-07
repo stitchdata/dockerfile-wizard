@@ -11,4 +11,5 @@ FROM stitchdata/circleci:16.04
 # ````
 
 ENV DEBIAN_FRONTEND noninteractive
+ENV LEIN_ROOT true
 RUN apt-get -y -q install mysql-server-5.7 mysql-client
