@@ -11,9 +11,4 @@ FROM stitchdata/circleci:16.04
 # ````
 
 ENV DEBIAN_FRONTEND noninteractive
-
-RUN echo "mysql-server mysql-server/root_password password password" | debconf-set-selections \
-    && echo "mysql-server mysql-server/root_password_again password password" | debconf-set-selections \
-    && apt-get -y update \
-    && apt-get -y -q install mysql-server-5.7 mysql-client \
-    && usermod -d /var/lib/mysql/ mysql
+RUN apt-get -y -q install mysql-server-5.7 mysql-client
