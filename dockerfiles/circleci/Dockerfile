@@ -17,9 +17,7 @@ RUN apt-get update \
 RUN apt-get update \
 	&& apt-get -y install software-properties-common python-software-properties \
 	&& apt-get update \
-	&& apt-get -y install openjdk-8-jdk \
-	&& mkdir -p /usr/lib/jvm/java-8-openjdk-amd64/jre/bin \
-	&& ln -s /usr/bin/java /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+	&& apt-get -y install openjdk-8-jdk
 
 # awscli
 RUN apt-get -y install python3-pip \
